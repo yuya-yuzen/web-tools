@@ -1,4 +1,4 @@
 module.exports = {
   outputDir: "docs",
-  publicPath: "/web-tools",
+  publicPath: process.env.NODE_ENV === "development" ? "/" : "/web-tools",
 };
